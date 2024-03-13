@@ -1,8 +1,8 @@
-# NgJobSearch
+# Ng-job-search
 
 [Consignes](https://bit.ly/at-cert-job-search)
 
----
+# NgJobSearch
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 17.2.1.
 
