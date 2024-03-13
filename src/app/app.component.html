@@ -1,0 +1,24 @@
+<div class="mainPage">
+  <h1>Find your job</h1>
+  <div class="d-flex justify-content-center w-75">
+    <button
+      class="col-6"
+      [ngClass]="{ selectedPage: (listeJobService.onListeJobPage | async) }"
+      [routerLink]="['/jobs']"
+      (click)="listeJobService.onListeJobPage.next(true)"
+    >
+      Jobs
+    </button>
+    <button
+      class="col-6"
+      [ngClass]="{ selectedPage: !(listeJobService.onListeJobPage | async) }"
+      [routerLink]="['/favorites']"
+      (click)="listeJobService.onListeJobPage.next(false)"
+    >
+      Favorite
+    </button>
+  </div>
+  <div class="w-75">
+    <router-outlet></router-outlet>
+  </div>
+</div>

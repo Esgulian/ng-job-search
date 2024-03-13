@@ -1,0 +1,27 @@
+<div class="d-flex justify-content-between align-items-center">
+  <div class="d-flex">
+    <img class="m-2" [src]="job.companyLogo" alt="Logo" />
+    <div class="px-2 pt-2 ms-4">
+      <h2 class="m-0">
+        <a [routerLink]="['/jobs', job.id]" routerLinkActive="active">{{
+          job.title
+        }}</a>
+      </h2>
+      <div>
+        <span class="libelle">Company Name: </span>
+        <span>{{ job.companyName }}</span>
+        <span class="libelle ms-4">Reference: </span>
+        <span>{{ job.reference }}</span>
+      </div>
+    </div>
+  </div>
+  <div class="me-3">
+    <button
+      *ngIf="showToggleFavorite"
+      class="icon-star no-button"
+      id="star-{{ job.id }}"
+      [ngClass]="{ active: job.isFavorite }"
+      (click)="toggleFavorite()"
+    ></button>
+  </div>
+</div>

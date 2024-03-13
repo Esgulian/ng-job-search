@@ -1,0 +1,11 @@
+@if (!(listeJobService.onListeJobPage | async)) {
+    @for (job of favoriteJobs; track job.id; let idx = $index, e = $even) {
+      <div [ngClass]="{ evenLine: e }">
+        <app-job-resume [job]="job" [showToggleFavorite] = false></app-job-resume>
+      </div>
+  } @empty {
+      <h5 class="d-flex justify-content-center mt-5">No favorite selected</h5>
+  }
+} @else {
+  <h5 class="d-flex justify-content-center mt-5">No favorite selected</h5>
+}

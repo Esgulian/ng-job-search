@@ -1,0 +1,7 @@
+@if (listeJobService.onListeJobPage | async) {
+  @for (job of jobs; track job.id; let idx = $index, e = $even) {
+  <div [ngClass]="{ evenLine: e }">
+    <app-job-resume [job]="job"></app-job-resume>
+  </div>
+  }
+}
