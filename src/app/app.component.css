@@ -1,0 +1,19 @@
+button {
+  font-size: larger;
+  font-weight: light;
+  color: black;
+  height: 60px;
+  background-color: #dddddd
+ }
+
+.selectedPage {
+  background-color: #4e4e4e;
+  font-weight: bold;
+  color: white
+ }
+
+.mainPage{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+ }

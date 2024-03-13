@@ -1,0 +1,44 @@
+img {
+  height: 80px;
+}
+
+h2:hover {
+  text-decoration: underline;
+}
+
+a:visited,
+a {
+  color: black;
+  text-decoration: none;
+}
+
+.libelle {
+  font-weight: 500;
+}
+
+.icon-star{
+  display:inline-block;
+}
+
+.icon-star:before,
+.icon-star.active:before{
+   content: "\2606";
+   display:block;
+   font-size:30px;
+   cursor:pointer;
+}
+
+.icon-star:hover,
+.icon-star.active:before{
+   content: "\2605";
+   color: gold;
+}
+
+.no-button{
+  padding: 0;
+  border: none;
+  outline: none;
+  font: inherit;
+  color: inherit;
+  background: none
+}

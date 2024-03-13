@@ -1,0 +1,27 @@
+.icon-house:before {
+   content: "\21A9";
+   display:block;
+   font-size:30px;
+   cursor:pointer;
+   margin-right: 8px;
+}
+
+img {
+  height: 120px;
+}
+
+.tag {
+    border-radius: 25px;
+    background: #1087cd;
+    color: white;
+}
+
+.libelle {
+  font-weight: 700;
+}
+
+button {
+  background-color: #dddddd;
+  color: black;
+  font-weight: 500;
+}
