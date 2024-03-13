@@ -7,6 +7,11 @@ import { JobDetailResolverService } from './service/resolver/job-detail-resolver
 
 export const routes: Routes = [
   {
+    path: '',
+    pathMatch: 'full',
+    redirectTo: '/jobs',
+  },
+  {
     path: 'jobs',
     component: JobsComponent,
     resolve: {
